@@ -1,0 +1,125 @@
+body {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #0079cfe6; /* Standard blue */
+    color: white;
+    border-bottom: 1px solid #0074b3ef; /* Slightly darker shade for the border */
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    max-width: 600px;
+}
+
+.btn-custom {
+    background-color: #0079cfe6; /* Standard blue */
+    color: #ffffff;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.form-control-file {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+}
+
+.form-control-file:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.text-center {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem; /* Reduced font size for footer text */
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+header.dark-theme {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-bottom-color: #1a1a1a;
+}
+
+.container.dark-theme {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.form-control-file.dark-theme {
+    background-color: #444;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.footer.dark-theme {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-top-color: #1a1a1a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
